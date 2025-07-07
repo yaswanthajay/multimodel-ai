@@ -1,9 +1,8 @@
-streamlit
-numpy
-pandas
-pillow
-pytesseract
-opencv-python
-SpeechRecognition
-torch
-scikit-learn
+streamlit==1.35.0
+transformers==4.41.1
+torch==2.5.1
+pytesseract==0.3.10
+opencv-python==4.9.0.80
+SpeechRecognition==3.10.0
+pillow==10.3.0
+
