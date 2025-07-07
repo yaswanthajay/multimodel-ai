@@ -5,8 +5,7 @@ import cv2
 import tempfile
 import os
 import speech_recognition as sr
-
-
+import pipeline
 
 def extract_text_from_image(image_file):
     with tempfile.NamedTemporaryFile(delete=False, suffix=".jpg") as temp_file:
