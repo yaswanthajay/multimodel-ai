@@ -5,7 +5,7 @@ import cv2
 import tempfile
 import os
 import speech_recognition as sr
-from transformers import pipeline
+
 
 # Load language model (text-based question answering or summarizer)
 nlp_pipeline = pipeline("text2text-generation", model="google/flan-t5-base")
