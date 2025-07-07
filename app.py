@@ -7,8 +7,6 @@ import os
 import speech_recognition as sr
 
 
-# Load language model (text-based question answering or summarizer)
-nlp_pipeline = pipeline("text2text-generation", model="google/flan-t5-base")
 
 def extract_text_from_image(image_file):
     with tempfile.NamedTemporaryFile(delete=False, suffix=".jpg") as temp_file:
