@@ -5,6 +5,5 @@ pillow
 pytesseract
 opencv-python
 SpeechRecognition
-transformers
 torch
 scikit-learn
