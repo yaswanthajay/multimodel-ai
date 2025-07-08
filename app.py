@@ -29,7 +29,7 @@ def transcribe_audio(audio_path):
     return recognizer.recognize_google(audio_data)
 
 # UI
-st.title("🧠 Multimodal AI Assistant")
+st.title(" Multimodal AI Assistant")
 st.markdown("Upload an **image or audio file**, and type a question or `'summarize'`.")
 
 uploaded_file = st.file_uploader("Upload Image or Audio", type=["png", "jpg", "jpeg", "wav"])
