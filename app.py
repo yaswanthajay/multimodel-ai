@@ -6,6 +6,9 @@ from transformers import pipeline as transformers_pipeline
 import tempfile
 import os
 
+# ✅ Set page config at the very top (important)
+st.set_page_config(page_title="Multimodal AI Assistant", layout="centered")
+
 # Load text-to-text generation model
 @st.cache_resource
 def load_model():
@@ -26,7 +29,6 @@ def transcribe_audio(audio_path):
     return recognizer.recognize_google(audio_data)
 
 # UI
-st.set_page_config(page_title="Multimodal AI Assistant", layout="centered")
 st.title("🧠 Multimodal AI Assistant")
 st.markdown("Upload an **image or audio file**, and type a question or `'summarize'`.")
 
