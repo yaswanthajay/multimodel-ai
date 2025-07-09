@@ -11,11 +11,6 @@ from PIL import Image
 # Correct path to the Tesseract executable
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-# Example image processing
-img = Image.open("ChatGPT Image Jul 7, 2025, 02_38_13 PM.png")  # Replace with your image file
-text = pytesseract.image_to_string(img)
-
-print("Extracted Text:", text)
 
 
 
