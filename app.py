@@ -5,6 +5,10 @@ import speech_recognition as sr
 from transformers import pipeline as transformers_pipeline
 import tempfile
 import os
+import pytesseract
+
+# Add path if it's not recognized globally
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # ✅ Set page config at the very top (important)
 st.set_page_config(page_title="Multimodal AI Assistant", layout="centered")
