@@ -6,9 +6,17 @@ from transformers import pipeline as transformers_pipeline
 import tempfile
 import os
 import pytesseract
+from PIL import Image
 
-# Add path if it's not recognized globally
+# Set full path to tesseract.exe
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
+# Test code
+img = Image.open("test.png")
+text = pytesseract.image_to_string(img)
+
+print("Extracted Text:", text)
+
 
 # ✅ Set page config at the very top (important)
 st.set_page_config(page_title="Multimodal AI Assistant", layout="centered")
