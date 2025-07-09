@@ -8,14 +8,15 @@ import os
 import pytesseract
 from PIL import Image
 
-# Set full path to tesseract.exe
-pytesseract.pytesseract.tesseract_cmd = 'C:\Program Files\Tesseract-OCR\'
+# Correct path to the Tesseract executable
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-# Test code
-img = Image.open("test.png")
+# Example image processing
+img = Image.open("test.png")  # Replace with your image file
 text = pytesseract.image_to_string(img)
 
 print("Extracted Text:", text)
+
 
 
 # ✅ Set page config at the very top (important)
